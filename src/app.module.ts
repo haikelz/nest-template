@@ -4,13 +4,12 @@ import { APP_INTERCEPTOR } from "@nestjs/core";
 
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { IdModule } from "./id/id.module";
 
 /**
  * @see https://docs.nestjs.com/techniques/caching
  */
 @Module({
-  imports: [IdModule, CacheModule.register({ isGlobal: true })],
+  imports: [CacheModule.register({ isGlobal: true })],
   controllers: [AppController],
   providers: [
     AppService,

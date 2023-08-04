@@ -6,7 +6,6 @@ export class AppService {
   getHello(): GetHelloProps {
     return {
       message: "Hello!",
-      id: "12",
     };
   }
 }
