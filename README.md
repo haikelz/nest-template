@@ -8,7 +8,7 @@
 - Caching
 - Replace express with fastify
 - Compression
-- Runtime validator with [Nestia](https://nestia.io/docs/)
+- Swc for bundling
 
 ## Getting Started
 
